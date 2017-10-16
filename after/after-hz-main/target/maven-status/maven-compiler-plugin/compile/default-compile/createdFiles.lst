@@ -1,0 +1,4 @@
+com/hazelcast/samples/spring/data/migration/HazelcastServer.class
+com/hazelcast/samples/spring/data/migration/HazelcastServerConfiguration.class
+com/hazelcast/samples/spring/data/migration/MyNounLoader.class
+com/hazelcast/samples/spring/data/migration/MyVerbLoader.class

@@ -1,0 +1,3 @@
+com/hazelcast/samples/spring/data/migration/AfterTranslatorCommands.class
+com/hazelcast/samples/spring/data/migration/AfterTranslator.class
+com/hazelcast/samples/spring/data/migration/AfterTranslatorConfiguration.class
