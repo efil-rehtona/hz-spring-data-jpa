@@ -131,7 +131,7 @@ CREATE TABLE IF NOT EXISTS verb (
 
 #### Try It
 
-`java -jar database/target/database-0.1-SNAPSHOT.jar` 를 커맨드창에서 실행하십시오.
+`java -jar database/target/database-1.0.0-SNAPSHOT.jar` 를 커맨드창에서 실행하십시오.
 
 이것은 스프링 부트를 사용하여 모든것을 실행 가능한 Jar 로 묶고, 스프링쉘은 명령을 처리하기위해 사용합니다.
 실행후에는 아래와 같이 나와야 합니다.
@@ -217,7 +217,7 @@ public interface VerbJPARepository extends CrudRepository<Verb, Integer> {
 
 ### 시도해보기
 Step 1 의 데이터베이스가 실행 중이라고 가정하고 다음을 사용하여 어플리케이션의 인스턴스를 시작합니다.
-`java -jar before/before-main/target/before-main-0.1-SNAPSHOT.jar` 로 시작.
+`java -jar before/before-main/target/before-main-1.0.0-SNAPSHOT.jar` 로 시작.
 
 아래와 같은 결과값이 보여야 합니다:
 ![Image of the before application immediately after started][BeforeMain1] 
@@ -430,9 +430,9 @@ public class TranslationService {
 헤이즐캐스트 클러스터 `after-hz-main` 에서 데이터를 찾을 수 있는 곳을 제시합니다.
 
 #### 시도해보기 
-Step 2 에서 데이터베이스를 중지했다고 가정하면 `java -jar database/target/database-0.1-SNAPSHOT.jar` 를 실행하여 데이터베이스를 다시 시작하십시오.
+Step 2 에서 데이터베이스를 중지했다고 가정하면 `java -jar database/target/database-1.0.0-SNAPSHOT.jar` 를 실행하여 데이터베이스를 다시 시작하십시오.
 
-이제 헤이즐캐스트 서버를 시작하기 위해 `java -jar after/after-hz-main/target/after-hz-main-0.1-SNAPSHOT.jar` 를 사용하여 독립 실행형 자바 어플리케이션으로 실행하십시오.
+이제 헤이즐캐스트 서버를 시작하기 위해 `java -jar after/after-hz-main/target/after-hz-main-1.0.0-SNAPSHOT.jar` 를 사용하여 독립 실행형 자바 어플리케이션으로 실행하십시오.
 
 아래와 같은 결과가 보여야합니다:
 
@@ -447,7 +447,7 @@ Members [1] {
 이것은 헤이즐캐스트 서버 클러스터가 형성되었음을 보여주며 이 프로세스는 해당 클러스터의 구성원입니다. 현재는 이것이 유일한 멤버입니다.
 
 하나의 클러스터는 일반적으로 쓸모가 없으므로 다른 창에서 동일한 명령을 사용하여 다른 헤이즐캐스트 서버를 시작하십시오 
-`java -jar after/after-hz-main/target/after-hz-main-0.1-SNAPSHOT.jar`.
+`java -jar after/after-hz-main/target/after-hz-main-1.0.0-SNAPSHOT.jar`.
 
 아래와 같은 결과가 보여야합니다:
 
@@ -469,7 +469,7 @@ Members [2] {
 현재 코딩에서 지연로드를 선택 했으므로 로드 된 데이터베이스 컨텐츠는 없습니다.
 
 이제 연결된 헤이즐캐스트 서버 레이어가 있습니다. 번역 어플리케이션을 시작할 수 있습니다.
-`java -jar after/after-main/target/after-main-0.1-SNAPSHOT.jar` 를 실행하면 아래와 같이 나옵니다: 
+`java -jar after/after-main/target/after-main-1.0.0-SNAPSHOT.jar` 를 실행하면 아래와 같이 나옵니다: 
 
 ![Image of the after application just having started][AfterMain1] 
 
